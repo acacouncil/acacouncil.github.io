@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Bad+Script');
+body {
+	/*background-image: linear-gradient( #9370DB, #000);*/
+	margin-top:100;
+	padding: 100;
+	
+	justify-content: center;
+	align-content: center;
+	font-family: 'Bad Script', cursive;
+}
+.container {
+	text-align: center;
+	margin-top: 10px;
+}
+.btn {
+	border: 1px solid #9370DB;
+	background: none;
+	padding: 10px 20px;
+	font-size: 22px;
+	cursor: pointer;
+	margin: 10px;
+	transition: 0.8s;
+	position: relative;
+	overflow: hidden;
+	box-shadow: 3px 3px 5px #663399;
+}
+.btn1{
+	color: #9370DB;
+}
+.btn2{
+	color: #fff;
+}
+.btn1:hover{
+	color: #fff;
+}
+.btn2:hover{
+	color: #9370DB;
+}
+.btn::before{
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 0%;
+	background: #9370DB;
+	z-index: -1;
+	transition: 0.8s;
+}
+.btn1::before{
+	top: 0;
+	border-radius: 0 0 50% 50%;
+}
+.btn2::before{
+	bottom: 0;
+	border-radius: 50% 50% 0 0;
+}
+.btn2::before{
+	height: 180%;
+}
+.btn1:hover::before{
+	height: 180%;
+}
+.btn2:hover::before{
+	height: 0%;
+}
+#containers {
+	width: 1500px;
+    margin: auto;
+	border: 2px solid rgb(0, 0, 0);
+	border-top: 10px solid purple;
+	padding: 0px 0px 40px 40px;
+	box-shadow: 1px 3px 5px #C0C0C0;
+}
+
+
+
+
